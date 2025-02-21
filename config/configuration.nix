@@ -47,7 +47,11 @@
 	pulse.enable = true;
   };
 
+  services.acpid.enable = true;
   services.picom.enable = true;
+  services.picom.vSync = true;
+  services.picom.fade = true;
+  services.picom.fadeDelta = 5;
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -132,6 +136,10 @@ services.displayManager = {
     pipewire
     pwvucontrol
     pw-volume
+    pavucontrol
+    home-manager
+    brightnessctl
+    nasm
   ];
   environment.sessionVariables = {
   	EDITOR="vim";
