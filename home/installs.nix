@@ -4,6 +4,7 @@
 
     home.packages = with pkgs; [
         helix
+        yt-dlp
 
 
 # Managing Scripts for now 
