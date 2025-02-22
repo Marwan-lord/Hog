@@ -79,7 +79,6 @@ services.displayManager = {
     packages = with pkgs; [
     		zathura
 		firefox
-		geeqie
 		lazygit
 		zellij
 		rustup
