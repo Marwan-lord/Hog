@@ -7,8 +7,7 @@
 
   home.username = "marwan";
   home.homeDirectory = "/home/marwan";
-  home.stateVersion = "24.11"; # Please read the comment before changing.
-
+  home.stateVersion = "24.11";
   home.sessionVariables = {
     EDITOR = "vim";
   };
