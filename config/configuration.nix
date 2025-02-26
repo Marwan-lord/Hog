@@ -10,6 +10,19 @@
       ./hardware-configuration.nix
     ];
 
+
+	# Graphics and drivers
+
+  hardware.graphics = {
+  		  enable = true;
+		  extraPackages = with pkgs; [
+		  intel-media-driver      # For Intel HD/UHD graphics (Broadwell+)
+			  vaapiIntel              # VA-API (Video Acceleration) support
+			  libvdpau-va-gl          # VDPAU (Video Decode) backend for VA-API
+			  mesa.drivers            # OpenGL/Vulkan drivers
+		  ];
+  };
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -149,6 +162,8 @@ services.displayManager = {
     pkgs.nerd-fonts.blex-mono
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.nerd-fonts.lilex
+    pkgs.nerd-fonts.space-mono
+    pkgs.nerd-fonts.droid-sans-mono
   ];
 
   environment.shells = with pkgs; [ zsh ];

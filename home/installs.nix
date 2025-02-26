@@ -10,6 +10,11 @@
         ffmpeg
         mpv
         gparted
+        polkit
+        polkit_gnome
+        qalculate-gtk
+        krita
+        lua
         # Managing Scripts for now 
         (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
         (writeShellScriptBin "bf" (builtins.readFile ../scripts/books.sh))
