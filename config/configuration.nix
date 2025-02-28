@@ -16,10 +16,11 @@
   hardware.graphics = {
   		  enable = true;
 		  extraPackages = with pkgs; [
-		  intel-media-driver      # For Intel HD/UHD graphics (Broadwell+)
+			  intel-media-driver      # For Intel HD/UHD graphics (Broadwell+)
 			  vaapiIntel              # VA-API (Video Acceleration) support
 			  libvdpau-va-gl          # VDPAU (Video Decode) backend for VA-API
 			  mesa.drivers            # OpenGL/Vulkan drivers
+			  vpl-gpu-rt
 		  ];
   };
 
@@ -65,6 +66,10 @@
   services.picom.vSync = true;
   services.picom.fade = true;
   services.picom.fadeDelta = 5;
+
+
+  # LeftWM
+services.xserver.windowManager.leftwm.enable = true;
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";

@@ -15,6 +15,10 @@
         qalculate-gtk
         krita
         lua
+        nodejs
+        python3
+        polybar
+        tlrc
         # Managing Scripts for now 
         (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
         (writeShellScriptBin "bf" (builtins.readFile ../scripts/books.sh))
