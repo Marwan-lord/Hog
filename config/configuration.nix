@@ -66,6 +66,7 @@
   services.picom.vSync = true;
   services.picom.fade = true;
   services.picom.fadeDelta = 5;
+  programs.slock.enable = true;
 
 
   # LeftWM
@@ -96,7 +97,6 @@ services.displayManager = {
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     		zathura
-		firefox
 		lazygit
 		zellij
 		rustup
@@ -112,7 +112,6 @@ services.displayManager = {
 		tldr
 		unzip
 		gnumake
-		kitty
 		ccls
 		bat
 		htop
