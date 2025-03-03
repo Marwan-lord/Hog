@@ -85,11 +85,13 @@ services.xserver.windowManager.leftwm.enable = true;
 		luaModules = with pkgs.luaPackages; [ luarocks luadbi-mysql ];
 	};
 };
-services.displayManager = {
-	sddm.enable = true;
-	defaultSession = "none+awesome";
-};
+#services.displayManager = {
+	#sddm.enable = true;
+	#defaultSession = "none+awesome";
+#};
 
+ services.displayManager.ly.enable = true;
+	
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.marwan = {
     isNormalUser = true;
