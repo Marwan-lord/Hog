@@ -170,6 +170,8 @@ services.xserver.windowManager.leftwm.enable = true;
     pkgs.nerd-fonts.lilex
     pkgs.nerd-fonts.space-mono
     pkgs.nerd-fonts.droid-sans-mono
+    pkgs.go-font
+    pkgs.font-awesome
   ];
 
   environment.shells = with pkgs; [ zsh ];
