@@ -67,7 +67,22 @@
   services.picom.fade = true;
   services.picom.fadeDelta = 5;
   programs.slock.enable = true;
-
+  services.geoclue2.enable = true;
+  location.provider = "geoclue2";
+ 
+    # Red Shift Setup
+    services.redshift = {
+    enable = true;
+    brightness = {
+      # Note the string values below.
+      day = "1";
+      night = "1";
+    };
+    temperature = {
+      day = 5500;
+      night = 3700;
+    };
+  };
 
   # LeftWM
 services.xserver.windowManager.leftwm.enable = true;
@@ -165,6 +180,7 @@ services.xserver.windowManager.leftwm.enable = true;
 
   fonts.packages = [
     pkgs.nerd-fonts.zed-mono
+    pkgs.nerd-fonts.fira-code
     pkgs.nerd-fonts.blex-mono
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.nerd-fonts.lilex
