@@ -69,6 +69,7 @@
   programs.slock.enable = true;
   services.geoclue2.enable = true;
   location.provider = "geoclue2";
+  security.polkit.enable = true;
  
     # Red Shift Setup
     services.redshift = {
