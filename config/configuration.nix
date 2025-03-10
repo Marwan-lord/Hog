@@ -61,6 +61,10 @@
 	pulse.enable = true;
   };
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+
+
   services.acpid.enable = true;
   services.picom.enable = true;
   services.picom.vSync = true;
