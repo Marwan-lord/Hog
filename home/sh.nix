@@ -1,7 +1,6 @@
 { config, pkgs, ... }: 
 {
 
-
     programs = {
         nushell = { 
             enable = true;
@@ -11,7 +10,7 @@
                 let carapace_completer = {|spans|
                     carapace $spans.0 nushell ...$spans | from json
                 }
-            $env.config = {
+                $env.config = {
 show_banner: false,
              completions: {
 case_sensitive: false # case-sensitive completions
@@ -26,17 +25,20 @@ enable: true
             completer: $carapace_completer # check 'carapace_completer' 
                     }
              }
-            } 
-            $env.PATH = ($env.PATH | 
-                    split row (char esep) |
-                    prepend /home/myuser/.apps |
-                    append /usr/bin/env
-                    )
+                } 
+                $env.config.edit_mode = 'vi'
+            $env.config.table.mode = 'psql'
+                $env.PATH = ($env.PATH | 
+                        split row (char esep) |
+                        prepend /home/myuser/.apps |
+                        append /usr/bin/env
+                        )
                 '';
             shellAliases = {
-                vi = "hx";
-                vim = "hx";
-                nano = "hx";
+                vi = "nvim";
+                lsgen = "nix profile history --profile /nix/var/nix/profiles/system";
+                delold = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system --older-than 14d";
+
             };
         };  
         carapace.enable = true;

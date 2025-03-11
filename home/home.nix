@@ -4,7 +4,7 @@
     imports = [
         ./installs.nix
         ./starship.nix
-        ./shell.nix
+        ./sh.nix
     ];
 
     home.username = "marwan";
