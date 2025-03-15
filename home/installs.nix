@@ -27,7 +27,7 @@
         rofi
         jetbrains.idea-community
         ghostty
-        evil-helix
+        helix
         bacon
         # Managing Scripts for now 
         (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
