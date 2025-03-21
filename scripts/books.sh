@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 
-# Everforest Dark color scheme (https://github.com/sainnhe/everforest)
-BG="#1e2326"          # Background
-FG="#D3C6AA"          # Foreground (text)
-SBG="#475258"         # Selected background
-SFG="#D3C6AA"         # Selected text
-ACCENT="#A7C080"      # Green accent
-HIGHLIGHT="#83C092"   # Secondary highlight
+BG="#1a1b26"          # Background (Dark Navy)
+FG="#a9b1d6"          # Foreground (Soft Blue-Gray)
+SBG="#283457"          # Selected Background (Deep Navy Blue)
+SFG="#c0caf5"          # Selected Text (Bright Ice Blue)
+ACCENT="#9ece6a"       # Accent (Muted Green)
+HIGHLIGHT="#7aa2f7"    # Highlight (Bright Tokyo Blue)
 
 # Configuration
 BOOKS_DIR="$HOME/Documents/books"
