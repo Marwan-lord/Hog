@@ -143,6 +143,7 @@ services.xserver.windowManager.leftwm.enable = true;
 		gopls
 		wezterm
 		upower
+		discord-ptb
 	];
   };
 
@@ -178,9 +179,12 @@ services.xserver.windowManager.leftwm.enable = true;
     home-manager
     brightnessctl
     nasm
+    pkg-config
+    fontconfig
   ];
   environment.sessionVariables = {
   	EDITOR="vim";
+ 	PKG_CONFIG_PATH = "${pkgs.fontconfig}/lib/pkgconfig";
 };
 
   fonts.packages = [
