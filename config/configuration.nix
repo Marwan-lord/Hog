@@ -5,29 +5,26 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+    ./services.nix
+  ];
 
-
-	# Graphics and drivers
-
+  # Graphics and drivers
   hardware.graphics = {
-  		  enable = true;
-		  extraPackages = with pkgs; [
-			  intel-media-driver      # For Intel HD/UHD graphics (Broadwell+)
-			  vaapiIntel              # VA-API (Video Acceleration) support
-			  libvdpau-va-gl          # VDPAU (Video Decode) backend for VA-API
-			  mesa.drivers            # OpenGL/Vulkan drivers
-			  vpl-gpu-rt
-		  ];
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-media-driver # For Intel HD/UHD graphics (Broadwell+)
+      vaapiIntel # VA-API (Video Acceleration) support
+      libvdpau-va-gl # VDPAU (Video Decode) backend for VA-API
+      mesa.drivers # OpenGL/Vulkan drivers
+      vpl-gpu-rt
+    ];
   };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  services.tlp.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -56,98 +53,56 @@
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
-  services.pipewire = {
-  	enable = true;
-	pulse.enable = true;
-  };
 
+  fonts.fontconfig.enable = true;
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
 
-
-  services.acpid.enable = true;
-  services.picom.enable = true;
-  services.picom.vSync = true;
-  services.picom.fade = true;
-  services.picom.fadeDelta = 5;
   programs.slock.enable = true;
-  services.geoclue2.enable = true;
-  location.provider = "geoclue2";
   security.polkit.enable = true;
- 
-    # Red Shift Setup
-    services.redshift = {
-    enable = true;
-    brightness = {
-      # Note the string values below.
-      day = "1";
-      night = "1";
-    };
-    temperature = {
-      day = 5500;
-      night = 3700;
-    };
-  };
 
-  # LeftWM
-services.xserver.windowManager.leftwm.enable = true;
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
-  services.gvfs.enable = true;
-  services.xserver = {
-	enable = true;
-	windowManager.awesome = {
-		enable = true;
-		luaModules = with pkgs.luaPackages; [ luarocks luadbi-mysql ];
-	};
-};
-#services.displayManager = {
-	#sddm.enable = true;
-	#defaultSession = "none+awesome";
-#};
-
- services.displayManager.ly.enable = true;
-	
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.marwan = {
     isNormalUser = true;
     description = "Marwan";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
-    		zathura
-		lazygit
-		zellij
-		rustup
-		fastfetch
-		go
-		ppsspp
-		dunst
-		fzf
-		btop
-		gdb
-		cmake
-		hexyl
-		tldr
-		unzip
-		gnumake
-		ccls
-		bat
-		htop
-		man-pages
-		man-pages-posix
-		clang
-		gopls
-		wezterm
-		upower
-		discord-ptb
-	];
+      zathura
+      lazygit
+      zellij
+      rustup
+      fastfetch
+      go
+      ppsspp
+      dunst
+      fzf
+      btop
+      gdb
+      cmake
+      hexyl
+      tldr
+      unzip
+      gnumake
+      ccls
+      bat
+      htop
+      man-pages
+      man-pages-posix
+      clang
+      gopls
+      wezterm
+      upower
+      discord-ptb
+    ];
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -180,12 +135,12 @@ services.xserver.windowManager.leftwm.enable = true;
     brightnessctl
     nasm
     pkg-config
-    fontconfig
   ];
+
   environment.sessionVariables = {
-  	EDITOR="vim";
- 	PKG_CONFIG_PATH = "${pkgs.fontconfig}/lib/pkgconfig";
-};
+    EDITOR = "vim";
+    PKG_CONFIG_PATH = "${pkgs.fontconfig}/lib/pkgconfig";
+  };
 
   fonts.packages = [
     pkgs.nerd-fonts.zed-mono
