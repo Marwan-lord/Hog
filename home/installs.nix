@@ -36,6 +36,8 @@
     nixd
     nixfmt-rfc-style
     tree
+    xorg.xclock
+    xorg.xprop
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
     (writeShellScriptBin "bf" (builtins.readFile ../scripts/books.sh))

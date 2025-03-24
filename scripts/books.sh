@@ -42,10 +42,8 @@ if [ -z "$book_list" ]; then
     exit 1
 fi
 
-# Format for dmenu (show filenames with paths)
 selected=$(echo "$book_list" | sed "s|$BOOKS_DIR/||" | sort | dmenu "${DMENU_OPTS[@]}" -p "$DMENU_PROMPT")
 
-# Open selected book
 if [ -n "$selected" ]; then
     full_path="$BOOKS_DIR/$selected"
     if [ -f "$full_path" ]; then
