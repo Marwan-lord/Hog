@@ -2,8 +2,9 @@
 {
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
+    window.opacity = 1;
     terminal.shell = "nu";
-    window.opacity = 0.85;
+
     window.padding = {
       x = 5;
       y = 5;
@@ -11,7 +12,7 @@
 
     font = {
       normal.family = "JetBrainsMono Nerd Font";
-      size = 10;
+      size = 13;
     };
 
     colors.primary = {

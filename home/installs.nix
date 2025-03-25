@@ -4,7 +4,6 @@
 
   home.packages = with pkgs; [
     yt-dlp
-    dmenu
     libnotify
     ffmpeg
     mpv
@@ -12,25 +11,18 @@
     polkit
     polkit_gnome
     qalculate-gtk
-    krita
     lua
     nodejs
     python3
-    polybar
     tlrc
-    xsel
-    lxappearance
     starship
     libclang
     ranger
     lf
-    rofi
-    jetbrains.idea-community
     ghostty
     helix
     bacon
     lldb
-    flameshot
     kitty
     eww
     nixd
@@ -38,6 +30,12 @@
     tree
     xorg.xclock
     xorg.xprop
+    swaylock
+    swayimg
+    fuzzel
+    mako
+    swww
+    rofi-wayland
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
     (writeShellScriptBin "bf" (builtins.readFile ../scripts/books.sh))

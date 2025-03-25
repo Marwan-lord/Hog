@@ -9,7 +9,7 @@
       empty_symbol = " ";
       full_symbol = " ";
       unknown_symbol = "󰂑 ";
-      disabled = false;
+      disabled = true;
       display = [
         {
           style = "red bold";

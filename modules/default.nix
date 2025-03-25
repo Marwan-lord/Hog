@@ -4,6 +4,7 @@
   imports = [
     ./hardware.nix
     ./services.nix
+    ./niri.nix
   ];
 
   hardware.graphics = {
@@ -61,8 +62,6 @@
       rustup
       fastfetch
       go
-      ppsspp
-      dunst
       fzf
       btop
       gdb
@@ -80,7 +79,6 @@
       gopls
       wezterm
       upower
-      discord-ptb
     ];
   };
 
@@ -99,16 +97,12 @@
     chromium
     yazi
     pcmanfm
-    feh
-    xclip
     neovim
     gcc
     jq
     ripgrep
     fd
     vlc
-    xdotool
-    xorg.xrandr
     pipewire
     pwvucontrol
     pw-volume

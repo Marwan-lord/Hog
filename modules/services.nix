@@ -9,17 +9,12 @@
 
   services.acpid.enable = true;
 
-  services.picom = {
-    enable = true;
-    vSync = true;
-  };
-
   services.xserver = {
     enable = true;
 
     windowManager = {
       leftwm.enable = true;
-      spectrwm.enable = true;
+      qtile.enable = true;
 
       awesome = {
         enable = true;
