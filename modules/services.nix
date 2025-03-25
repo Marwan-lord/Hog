@@ -12,8 +12,6 @@
   services.picom = {
     enable = true;
     vSync = true;
-    fade = true;
-    fadeDelta = 5;
   };
 
   services.xserver = {
