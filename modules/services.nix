@@ -2,6 +2,7 @@
 {
 
   services.tlp.enable = true;
+  systemd.user.extraConfig = "DefaultTimeoutStopSec=5s";
 
   services.pipewire = {
     enable = true;

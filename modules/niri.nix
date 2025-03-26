@@ -19,7 +19,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    cliphist
     hypridle
     hyprlock
     hyprshot
@@ -36,9 +35,6 @@
       enable = true;
       package = pkgs.niri;
     };
-
-    dconf.enable = true;
-    ssh.askPassword = "";
     xwayland.enable = true;
   };
 }
