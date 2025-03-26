@@ -2,7 +2,7 @@
 {
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
-    window.opacity = 1;
+    window.opacity = 0.85;
     terminal.shell = "nu";
 
     window.padding = {

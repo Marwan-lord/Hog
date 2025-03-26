@@ -42,9 +42,6 @@
   };
 
   fonts.fontconfig.enable = true;
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
-
   programs.slock.enable = true;
   security.polkit.enable = true;
 
@@ -79,6 +76,7 @@
       gopls
       wezterm
       upower
+      discord-ptb
     ];
   };
 

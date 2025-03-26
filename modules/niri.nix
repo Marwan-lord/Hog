@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 {
   xdg.portal = {
     enable = true;
@@ -8,7 +8,6 @@
     ];
   };
 
-
   environment.sessionVariables = {
     XDG_SESSION_TYPE = "wayland";
     NIXOS_OZONE_WL = "1";
@@ -17,9 +16,8 @@
     _JAVA_AWT_WM_NONREPARENTING = "1";
     CLUTTER_BACKEND = "wayland";
     NIXOS_XDG_OPEN_USE_PORTAL = "1";
-  }; 
+  };
 
-  
   environment.systemPackages = with pkgs; [
     cliphist
     hypridle
@@ -33,13 +31,12 @@
     xwayland-satellite
   ];
 
-
   programs = {
     niri = {
       enable = true;
       package = pkgs.niri;
     };
-    
+
     dconf.enable = true;
     ssh.askPassword = "";
     xwayland.enable = true;

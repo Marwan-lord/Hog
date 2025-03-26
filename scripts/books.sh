@@ -42,7 +42,7 @@ if [ -z "$book_list" ]; then
     exit 1
 fi
 
-selected=$(echo "$book_list" | sed "s|$BOOKS_DIR/||" | sort | dmenu "${DMENU_OPTS[@]}" -p "$DMENU_PROMPT")
+selected=$(echo "$book_list" | sed "s|$BOOKS_DIR/||" | sort | dmenu-wl "${DMENU_OPTS[@]}" -p "$DMENU_PROMPT")
 
 if [ -n "$selected" ]; then
     full_path="$BOOKS_DIR/$selected"

@@ -7,9 +7,6 @@
     libnotify
     ffmpeg
     mpv
-    gparted
-    polkit
-    polkit_gnome
     qalculate-gtk
     lua
     nodejs
@@ -19,7 +16,6 @@
     libclang
     ranger
     lf
-    ghostty
     helix
     bacon
     lldb
@@ -28,14 +24,18 @@
     nixd
     nixfmt-rfc-style
     tree
-    xorg.xclock
-    xorg.xprop
     swaylock
     swayimg
     fuzzel
     mako
     swww
     rofi-wayland
+    jetbrains.idea-community
+    librewolf
+    dmenu-wayland
+    foot
+    nwg-look
+
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
     (writeShellScriptBin "bf" (builtins.readFile ../scripts/books.sh))
