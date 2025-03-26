@@ -2,7 +2,6 @@
 {
 
   services.tlp.enable = true;
-  services.redshift.enable = false;
 
   services.pipewire = {
     enable = true;

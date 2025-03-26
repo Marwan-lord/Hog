@@ -35,6 +35,8 @@
     dmenu-wayland
     foot
     nwg-look
+    ppsspp
+    krusader
 
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
