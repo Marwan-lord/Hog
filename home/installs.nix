@@ -38,6 +38,7 @@
     waybar
     librewolf-wayland
     ttyper
+    mgba
     
 
     # Managing Scripts for now
