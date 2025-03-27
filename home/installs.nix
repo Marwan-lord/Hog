@@ -37,6 +37,7 @@
     ppsspp
     waybar
     librewolf-wayland
+    ttyper
     
 
     # Managing Scripts for now
