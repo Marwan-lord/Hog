@@ -7,7 +7,6 @@
     ./sh.nix
     ./helix.nix
     ./alacritty.nix
-    ./waybar/waybar.nix
   ];
 
   home.username = "marwan";

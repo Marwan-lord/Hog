@@ -35,6 +35,8 @@
     foot
     nwg-look
     ppsspp
+    waybar
+    librewolf-wayland
     
 
     # Managing Scripts for now
