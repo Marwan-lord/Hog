@@ -41,6 +41,7 @@
     mgba
     nautilus
     qview
+    tuxtype
     
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
