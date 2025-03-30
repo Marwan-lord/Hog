@@ -14,13 +14,10 @@
     tlrc
     starship
     libclang
-    ranger
     lf
     helix
     bacon
     lldb
-    kitty
-    eww
     nixd
     nixfmt-rfc-style
     tree
@@ -28,8 +25,6 @@
     fuzzel
     mako
     swww
-    rofi-wayland
-    jetbrains.idea-community
     dmenu-wayland
     foot
     nwg-look
