@@ -25,7 +25,6 @@
     nixfmt-rfc-style
     tree
     swaylock
-    swayimg
     fuzzel
     mako
     swww
