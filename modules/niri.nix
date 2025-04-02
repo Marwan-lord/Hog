@@ -21,7 +21,6 @@
   environment.systemPackages = with pkgs; [
     hypridle
     hyprlock
-    hyprshot
     playerctl
     wl-clipboard
     wl-clip-persist

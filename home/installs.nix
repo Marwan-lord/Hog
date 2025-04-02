@@ -21,7 +21,6 @@
     nixd
     nixfmt-rfc-style
     tree
-    swaylock
     fuzzel
     mako
     swww
@@ -37,6 +36,7 @@
     qview
     smassh
     gtypist
+    nitch
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
     (writeShellScriptBin "bf" (builtins.readFile ../scripts/books.sh))
