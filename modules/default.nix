@@ -18,6 +18,13 @@
     ];
   };
 
+
+  stylix.enable = true;
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+  stylix.image = ../thorne.png;
+  stylix.autoEnable = true;
+  stylix.targets.gtk.enable = true;
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 

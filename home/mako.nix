@@ -2,7 +2,7 @@
   services.mako = {
     enable = true;
     font = "JetBrainsMono Nerd Font11";
-    format="<b>%a ⏵</b> %s\n%b";
+    format="<b>%s</b>\\n%b";
     sort="-time";
     layer="overlay";
     backgroundColor="#1a1b26";

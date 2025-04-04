@@ -3,7 +3,7 @@
 {
   programs.helix.enable = true;
   programs.helix.settings = {
-    theme = "amberwood";
+    theme = "rose_pine";
     editor = {
       line-number = "relative";
       lsp.display-messages = true;

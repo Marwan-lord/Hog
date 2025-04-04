@@ -2,48 +2,48 @@
     font-family: 'JetBrainsMono Nerd Font', monospace;
     font-size: 14px;
     min-height: 0;
-    color: #f2f4f8;
+    color: #e0def4;  /* Rose Pine text color */
 }
 
 window#waybar {
-    background-color: #161616;
+    background-color: #191724;  /* Rose Pine base color */
     /* transition: background-color ease 0.5s; */
 }
 
 #workspaces button {
-    background-color: #161616;
-    color: #525252;
+    background-color: #191724;  /* Rose Pine base color */
+    color: #6e6a86;  /* Rose Pine muted color */
     padding: 2px;
     margin: 2px 0;
 }
 
 #workspaces button.active {
-    background-color: #3ddbd9;
-    color: #161616;
+    background-color: #ebbcba;  /* Rose Pine rose color */
+    color: #191724;  /* Rose Pine base color */
 }
 
 #pulseaudio, #battery, #clock {
-    background-color: #161616;
+    background-color: #191724;  /* Rose Pine base color */
     padding: 6px 0;
     margin: 2px 0;
 }
 
 #pulseaudio {
-    color: #42be65;
+    color: #31748f;  /* Rose Pine pine color */
 }
 
 #battery {
-    color: #ee5396;
+    color: #eb6f92;  /* Rose Pine love color */
 }
 
 #battery.warning {
-    color: #be95ff;
+    color: #c4a7e7;  /* Rose Pine iris color */
 }
 
 #battery.critical {
-    color: #ff8389;
+    color: #eb6f92;  /* Rose Pine love color - brighter */
 }
 
 #clock {
-    color: #33b1ff;
+    color: #9ccfd8;  /* Rose Pine foam color */
 }
