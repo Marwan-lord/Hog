@@ -9,6 +9,7 @@
     ./alacritty.nix
     ./waybar/default.nix
     ./hyprlock.nix
+    ./mako.nix
   ];
 
   home.username = "marwan";
