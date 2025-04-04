@@ -3,7 +3,7 @@
 {
   programs.helix.enable = true;
   programs.helix.settings = {
-    theme = "oxocarbon";
+    theme = "amberwood";
     editor = {
       line-number = "relative";
       lsp.display-messages = true;
@@ -13,10 +13,10 @@
     editor.color-modes = true;
     editor.cursorline = true;
 
-    # editor.indent-guides = {
-    #   render = true;
-    #   character = "▏";
-    #   skip-levels = 1;
-    # };
+    editor.indent-guides = {
+      render = true;
+      character = "▏";
+      skip-levels = 1;
+    };
   };
 }
