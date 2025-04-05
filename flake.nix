@@ -15,6 +15,7 @@
       self,
       nixpkgs,
       home-manager,
+      stylix,
       ...
     }@inputs:
     let
@@ -26,7 +27,7 @@
         specialArgs = { inherit inputs outputs; };
         modules = [
           ./modules/default.nix
-          inputs.stylix.nixosModules.stylix
+          stylix.nixosModules.stylix
         ];
       };
 

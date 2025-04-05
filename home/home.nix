@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   imports = [
@@ -10,6 +10,7 @@
     ./waybar/default.nix
     ./hyprlock.nix
     ./mako.nix
+    ./foot.nix
   ];
 
   home.username = "marwan";

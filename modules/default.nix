@@ -22,8 +22,7 @@
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
   stylix.image = ../moon.jpg;
-  stylix.autoEnable = true;
-  stylix.targets.gtk.enable = true;
+  stylix.polarity = "dark";
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -116,6 +115,7 @@
     brightnessctl
     nasm
     pkg-config
+    kitty
   ];
 
   environment.sessionVariables = {
