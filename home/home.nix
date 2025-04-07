@@ -7,7 +7,6 @@
     ./sh.nix
     ./helix.nix
     ./alacritty.nix
-    ./waybar/default.nix
     ./hyprlock.nix
     ./mako.nix
     ./foot.nix

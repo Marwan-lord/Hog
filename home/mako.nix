@@ -12,7 +12,7 @@
     margin="5";
     padding="10";
     borderSize=2;
-    borderColor="#3ddbd9";
+    borderColor="#f2e9e1";
     borderRadius=16;
     icons=true;
     maxIconSize=64;
