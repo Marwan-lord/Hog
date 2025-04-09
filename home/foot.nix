@@ -12,7 +12,7 @@
     };
 
     colors = {
-      alpha      = 0.9;
+      alpha      = 0.8;
       background = "191724";
       foreground = "e0def4";   
 

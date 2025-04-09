@@ -37,7 +37,7 @@
       shellAliases = {
         vi = "nvim";
         lsgen = "nix profile history --profile /nix/var/nix/profiles/system";
-        delold = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system --older-than 14d";
+        delold = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system --older-than 7d";
         b = "btop";
         x = "hx";
         hms = "home-manager switch --flake .";
