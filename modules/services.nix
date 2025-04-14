@@ -26,18 +26,8 @@
 
   services.xserver = {
     enable = true;
-
     windowManager = {
       leftwm.enable = true;
-      qtile.enable = true;
-
-      awesome = {
-        enable = true;
-        luaModules = with pkgs.luaPackages; [
-          luarocks
-          luadbi-mysql
-        ];
-      };
     };
   };
 

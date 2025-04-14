@@ -29,7 +29,6 @@
     nwg-look
     ppsspp
     waybar
-    librewolf-wayland
     ttyper
     mgba
     nautilus
