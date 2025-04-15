@@ -7,32 +7,40 @@
       # The config.nu can be anywhere you want if you like to edit your Nushell with Nu
       # for editing directly to config.nu
       extraConfig = ''
-                        let carapace_completer = {|spans|
-                            carapace $spans.0 nushell ...$spans | from json
-                        }
-                        $env.config = {
+      let carapace_completer = {|spans|
+          carapace $spans.0 nushell ...$spans | from json
+      }
+      $env.config = {
         show_banner: false,
-                     completions: {
-        case_sensitive: false # case-sensitive completions
-                            quick: true    # set to false to prevent auto-selecting completions
-                            partial: true    # set to false to prevent partial filling of the prompt
-                            algorithm: "fuzzy"    # prefix or fuzzy
-                            external: {
+        completions: {
+          case_sensitive: false # case-sensitive completions
+          quick: true    # set to false to prevent auto-selecting completions
+          partial: true    # set to false to prevent partial filling of the prompt
+          algorithm: "fuzzy"    # prefix or fuzzy
+          external: {
         # set to false to prevent nushell looking into $env.PATH to find more suggestions
-        enable: true 
+            enable: true 
         # set to lower can improve completion performance at the cost of omitting some options
-                    max_results: 100 
-                    completer: $carapace_completer # check 'carapace_completer' 
-                            }
-                     }
-                        } 
-                        $env.config.edit_mode = 'vi'
-                    $env.config.table.mode = 'psql'
-                        $env.PATH = ($env.PATH | 
-                                split row (char esep) |
-                                prepend /home/myuser/.apps |
-                                append /usr/bin/env
-                                )
+            max_results: 100 
+            completer: $carapace_completer # check 'carapace_completer' 
+            }
+         }
+      } 
+      $env.config.edit_mode = 'vi'
+      $env.config.table.mode = 'psql'
+      $env.PATH = ($env.PATH | 
+                    split row (char esep) |
+                    prepend /home/myuser/.apps |
+                    append /usr/bin/env
+      )
+      $env.FZF_DEFAULT_OPTS = '
+          --color=fg:#908caa,bg:#191724,hl:#ebbcba
+          --color=fg+:#e0def4,bg+:#26233a,hl+:#ebbcba
+          --color=border:#403d52,header:#31748f,gutter:#191724
+          --color=spinner:#f6c177,info:#9ccfd8
+          --color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa
+      '
+
       '';
       shellAliases = {
         vi = "nvim";

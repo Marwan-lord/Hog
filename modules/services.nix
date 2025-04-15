@@ -1,9 +1,8 @@
-{ pkgs, inputs,  ... }:
+{ inputs,  ... }:
 {
 
   services.tlp.enable = true;
   systemd.user.extraConfig = "DefaultTimeoutStopSec=5s";
-
 
   system.autoUpgrade = {
   enable = true;
@@ -23,13 +22,6 @@
   };
 
   services.acpid.enable = true;
-
-  services.xserver = {
-    enable = true;
-    windowManager = {
-      leftwm.enable = true;
-    };
-  };
 
   services.xserver.xkb = {
     layout = "us";

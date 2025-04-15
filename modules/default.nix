@@ -48,7 +48,6 @@
   };
 
   fonts.fontconfig.enable = true;
-  programs.slock.enable = true;
   security.polkit.enable = true;
 
   users.users.marwan = {
