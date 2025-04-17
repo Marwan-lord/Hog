@@ -93,7 +93,7 @@
       line_break.disabled = true;
       directory.style = "cyan ";
       character = {
-        success_symbol = "[λ](purple)";
+        success_symbol = "[λ](white)";
         error_symbol = "[λ](red)";
       };
       # git

@@ -13,26 +13,28 @@
 
     colors = {
       alpha      = 1;
-      background = "191724";
-      foreground = "e0def4";   
+      background= "121212";
+      foreground= "d0d0d0";
 
-      regular0   = "26233a";     
-      regular1   = "eb6f92";     
-      regular2   = "9ccfd8";     
-      regular3   = "f6c177";     
-      regular4   = "31748f";     
-      regular5   = "c4a7e7";     
-      regular6   = "ebbcba";     
-      regular7   = "e0def4";     
+      regular0 = "121212"; 
+      regular1 = "e06c75"; 
+      regular2 = "98c379"; 
+      regular3 = "e5c07b"; 
+      regular4 = "61afef"; 
+      regular5 = "c678dd"; 
+      regular6 = "56b6c2"; 
+      regular7 = "d0d0d0"; 
 
-      bright0    = "47435d";     
-      bright1    = "ff98ba";     
-      bright2    = "c5f9ff";     
-      bright3    = "ffeb9e";     
-      bright4    = "5b9ab7";     
-      bright5    = "eed0ff";     
-      bright6    = "ffe5e3";     
-      bright7    = "fefcff";     
+
+      bright0="666666";   
+      bright1="ff7a85";   
+      bright2="b5e890";   
+      bright3="f5d78e";   
+      bright4="7cc2ff";   
+      bright5="d788ee";   
+      bright6="66d6e3";   
+      bright7="f0f0f0"; 
+
 
       flash      = "f6c177";     
      
