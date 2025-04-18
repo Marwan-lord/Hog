@@ -10,6 +10,7 @@
     ./hyprlock.nix
     ./mako.nix
     ./foot.nix
+    ./fuzzel.nix
   ];
 
   home.username = "marwan";

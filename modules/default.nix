@@ -13,11 +13,10 @@
       intel-media-driver # For Intel HD/UHD graphics (Broadwell+)
       vaapiIntel # VA-API (Video Acceleration) support
       libvdpau-va-gl # VDPAU (Video Decode) backend for VA-API
-      mesa# OpenGL/Vulkan drivers
+      mesa # OpenGL/Vulkan drivers
       vpl-gpu-rt
     ];
   };
-
 
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
