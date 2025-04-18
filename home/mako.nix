@@ -10,13 +10,13 @@
     width=300;
     # height=110;
     # margin="5";
-    # padding="10";
-    # borderSize=2;
+    padding="10";
+    borderSize=2;
     # borderColor="#f2e9e1";
     borderRadius=16;
     icons=true;
     # maxIconSize=64;
-    # defaultTimeout=5000;
-    # ignoreTimeout=false;
+    defaultTimeout=5000;
+    ignoreTimeout=false;
   };
 }
