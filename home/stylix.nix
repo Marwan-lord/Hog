@@ -8,8 +8,8 @@
 
   stylix.fonts = {
     monospace = {
-      package = pkgs.nerd-fonts.jetbrains-mono;
-      name = "JetBrainsMono Nerd Font Mono";
+      package = pkgs.nerd-fonts.blex-mono;
+      name = "BlexMono Nerd Font";
     };
 
     serif = {
