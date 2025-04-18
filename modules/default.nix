@@ -20,9 +20,10 @@
 
 
   stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/classic-dark.yaml";
-  stylix.image = ../manhunt.png;
+  # stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/classic-dark.yaml";
+  stylix.image = ../wallpapers/slaveknight.jpg;
   stylix.polarity = "dark";
+  stylix.autoEnable = false;
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

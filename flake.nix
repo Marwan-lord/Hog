@@ -33,7 +33,10 @@
 
       homeConfigurations.marwan = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [ ./home/home.nix ];
+        modules = [
+          ./home/home.nix
+          stylix.homeManagerModules.stylix
+        ];
       };
     };
 }
