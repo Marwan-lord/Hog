@@ -11,6 +11,7 @@
     ./mako.nix
     ./foot.nix
     ./fuzzel.nix
+    ./zellij.nix
   ];
 
   home.username = "marwan";
