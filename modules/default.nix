@@ -5,6 +5,7 @@
     ./hardware.nix
     ./services.nix
     ./niri.nix
+    ../home/stylix.nix
   ];
 
   hardware.graphics = {
@@ -19,8 +20,8 @@
   };
 
   stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
-  stylix.image = ../wallpapers/redd.jpg;
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/solarized-dark.yaml";
+  stylix.image = ../wallpapers/cars.png;
   stylix.polarity = "dark";
   stylix.homeManagerIntegration.autoImport = true;
 
