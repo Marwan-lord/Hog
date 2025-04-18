@@ -20,10 +20,10 @@
 
 
   stylix.enable = true;
-  # stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/classic-dark.yaml";
-  stylix.image = ../wallpapers/slaveknight.jpg;
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
+  stylix.image = ../wallpapers/redd.jpg;
   stylix.polarity = "dark";
-  stylix.autoEnable = false;
+  stylix.homeManagerIntegration.autoImport = true;
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -116,6 +116,7 @@
     nasm
     pkg-config
     kitty
+    foot
   ];
 
   environment.sessionVariables = {

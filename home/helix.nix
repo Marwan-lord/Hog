@@ -3,7 +3,7 @@
 {
   programs.helix.enable = true;
   programs.helix.settings = {
-    theme = "sunset";
+    # theme = "sunset";
     editor = {
       line-number = "relative";
       lsp.display-messages = true;
