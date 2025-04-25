@@ -13,6 +13,7 @@
     ./fuzzel.nix
     ./zellij.nix
     ./zathura.nix
+    ./bat.nix
   ];
 
   home.username = "marwan";
