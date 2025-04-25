@@ -81,7 +81,6 @@
       clang
       gopls
       wezterm
-      upower
       discord-ptb
     ];
   };
