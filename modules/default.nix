@@ -48,6 +48,8 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  programs.nix-ld.enable = true;
+
   fonts.fontconfig.enable = true;
   security.polkit.enable = true;
 
