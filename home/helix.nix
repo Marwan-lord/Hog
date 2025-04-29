@@ -9,8 +9,9 @@
       lsp.display-inlay-hints = true;
     };
     editor.auto-completion = false;
-    # editor.color-modes = true;
+    editor.color-modes = true;
     editor.cursorline = true;
+    editor.bufferline = "multiple";
 
     editor.indent-guides = {
       render = true;

@@ -83,7 +83,7 @@
       clang
       gopls
       wezterm
-      discord-ptb
+      vesktop
     ];
   };
 
