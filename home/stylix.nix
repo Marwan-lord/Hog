@@ -2,7 +2,7 @@
 {
 
   stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/solarized-dark.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/uwunicorn.yaml";
   stylix.image = ../wallpapers/cars.png;
   stylix.polarity = "dark";
 
