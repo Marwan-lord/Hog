@@ -42,7 +42,7 @@
         b = "btop";
         x = "hx";
         hms = "home-manager switch --flake .";
-
+        cd = "z";
       };
     };
     carapace.enable = true;
