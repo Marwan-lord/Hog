@@ -14,13 +14,14 @@
     ./zellij.nix
     ./zathura.nix
     ./bat.nix
+    ./fzf.nix
   ];
 
   home.username = "marwan";
   home.homeDirectory = "/home/marwan";
   home.stateVersion = "24.11";
   home.sessionVariables = {
-    EDITOR = "vim";
+    EDITOR = "hx";
   };
 
   programs.home-manager.enable = true;

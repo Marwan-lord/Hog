@@ -67,7 +67,6 @@
       rustup
       fastfetch
       go
-      fzf
       btop
       gdb
       cmake
