@@ -9,7 +9,7 @@
   stylix.fonts = {
     monospace = {
       package = pkgs.nerd-fonts.blex-mono;
-      name = "BlexMono Nerd Font";
+      name = "Zedmono Nerd Font";
     };
 
     serif = {
