@@ -9,6 +9,7 @@
     pulse.enable = true;
   };
 
+  services.dbus.enable = true;
   services.upower.enable = true;
   services.acpid.enable = true;
 
