@@ -7,9 +7,10 @@
   stylix.polarity = "dark";
 
   stylix.fonts = {
+    sizes.terminal = 14;
     monospace = {
-      package = pkgs.nerd-fonts.blex-mono;
-      name = "Zedmono Nerd Font";
+      package = pkgs.nerd-fonts.ubuntu-mono;
+      name = "UbuntuMono Nerd Font";
     };
 
     serif = {
