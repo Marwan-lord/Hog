@@ -131,6 +131,7 @@
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.nerd-fonts.lilex
     pkgs.nerd-fonts.space-mono
+    pkgs.nerd-fonts.ubuntu-mono
     pkgs.nerd-fonts.droid-sans-mono
     pkgs.go-font
     pkgs.font-awesome
