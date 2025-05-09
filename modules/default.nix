@@ -84,6 +84,7 @@
       gopls
       wezterm
       vesktop
+      intelephense
     ];
   };
 

@@ -6,7 +6,7 @@
     editor = {
       line-number = "relative";
       lsp.display-messages = true;
-      lsp.display-inlay-hints = true;
+      # lsp.display-inlay-hints = true;
     };
     editor.auto-completion = false;
     editor.color-modes = true;
