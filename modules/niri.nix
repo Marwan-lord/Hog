@@ -16,6 +16,7 @@
     _JAVA_AWT_WM_NONREPARENTING = "1";
     CLUTTER_BACKEND = "wayland";
     NIXOS_XDG_OPEN_USE_PORTAL = "1";
+    GTK_USE_PORTAL="1";
   };
 
   environment.systemPackages = with pkgs; [

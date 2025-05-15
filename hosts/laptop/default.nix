@@ -3,9 +3,9 @@
 {
   imports = [
     ./hardware.nix
-    ./services.nix
-    ./niri.nix
-    ../home/stylix.nix
+    ../../modules/services.nix
+    ../../modules/niri.nix
+    ../../home/stylix.nix
   ];
 
 
@@ -22,7 +22,7 @@
 
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/uwunicorn.yaml";
-  stylix.image = ../wallpapers/cars.png;
+  stylix.image = ../../wallpapers/cars.png;
   stylix.polarity = "dark";
   stylix.homeManagerIntegration.autoImport = true;
 
