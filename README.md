@@ -1,5 +1,6 @@
 # my flake configuration
 
+```
 .
 ├── flake.lock
 ├── flake.nix
@@ -40,3 +41,4 @@
     └── slaveknight.jpg
 
 8 directories, 31 files
+```
