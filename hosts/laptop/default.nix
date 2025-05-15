@@ -20,12 +20,6 @@
     ];
   };
 
-  stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/uwunicorn.yaml";
-  stylix.image = ../../wallpapers/cars.png;
-  stylix.polarity = "dark";
-  stylix.homeManagerIntegration.autoImport = true;
-
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
