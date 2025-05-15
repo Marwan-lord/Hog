@@ -45,7 +45,6 @@
     p7zip
     zoxide
     hyprpicker
-    xfce.thunar
     php
     php84Packages.composer
     sqlite
