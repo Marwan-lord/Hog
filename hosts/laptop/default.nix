@@ -114,6 +114,7 @@
     pkg-config
     kitty
     foot
+    lutris
   ];
 
   environment.sessionVariables = {
