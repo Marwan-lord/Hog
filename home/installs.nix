@@ -51,7 +51,6 @@
     superhtml
     qutebrowser
     wineWowPackages.waylandFull
-    firefox
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
     (writeShellScriptBin "bf" (builtins.readFile ../scripts/books.sh))

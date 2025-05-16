@@ -19,4 +19,15 @@
       skip-levels = 1;
     };
   };
+  programs.helix.languages = {
+             language = [
+            {
+              name = "nix";
+              formatter = {
+                command = "nixfmt";
+              };
+              auto-format = true;
+            }
+          ];
+  };
 }
