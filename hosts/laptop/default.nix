@@ -8,7 +8,6 @@
     ../../home/stylix.nix
   ];
 
-
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
@@ -95,7 +94,16 @@
     wget
     git
     alacritty
-    chromium
+    (chromium.override {
+      commandLineArgs = [
+        "--enable-features=AcceleratedVideoEncoder,VaapiOnNvidiaGPUs,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE"
+        "--enable-features=VaapiIgnoreDriverChecks,VaapiVideoDecoder,PlatformHEVCDecoderSupport"
+        "--enable-features=UseMultiPlaneFormatForHardwareVideo"
+        "--ignore-gpu-blocklist"
+        "--enable-zero-copy"
+      ];
+    })
+
     yazi
     pcmanfm
     neovim
