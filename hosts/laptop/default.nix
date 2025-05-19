@@ -15,7 +15,7 @@
       vaapiIntel # VA-API (Video Acceleration) support
       libvdpau-va-gl # VDPAU (Video Decode) backend for VA-API
       mesa # OpenGL/Vulkan drivers
-      vpl-gpu-rt
+      intel-media-sdk
     ];
   };
 
