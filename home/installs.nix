@@ -53,6 +53,7 @@
     wineWowPackages.waylandFull
     kdePackages.kate
     ddgr
+    lshw
 
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
