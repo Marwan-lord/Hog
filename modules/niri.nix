@@ -1,5 +1,40 @@
 { pkgs, ... }:
 {
+
+  services = {
+    blueman.enable = true;
+    gnome.gnome-keyring.enable = true;
+    logind.powerKey = "ignore";
+  };
+
+  systemd = {
+    user.services = {
+      polkit-gnome-authentication-agent-1 = {
+        description = "polkit-gnome-authentication-agent-1";
+        wantedBy = [ "graphical-session.target" ];
+        wants = [ "graphical-session.target" ];
+        after = [ "graphical-session.target" ];
+        serviceConfig = {
+          Type = "simple";
+          ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+          Restart = "on-failure";
+          RestartSec = 1;
+          TimeoutStopSec = 10;
+        };
+      };
+      niri-flake-polkit.enable = false;
+
+      cliphist = {
+        description = "wl-paste + cliphist service";
+        serviceConfig = {
+          Type = "simple";
+          ExecStart = "${pkgs.wl-clipboard}/bin/wl-paste --watch ${pkgs.cliphist}/bin/cliphist store";
+          Restart = "on-failure";
+        };
+      };
+    };
+  };
+
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
@@ -42,6 +77,7 @@
     wl-color-picker
     wofi-power-menu
     xwayland-satellite
+    cliphist
   ];
 
   programs = {
