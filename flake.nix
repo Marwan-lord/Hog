@@ -24,7 +24,7 @@
     in
     {
       nixpkgs.config.allowUnfree = true;
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.abyss = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs; };
         modules = [
           ./hosts/laptop/default.nix
