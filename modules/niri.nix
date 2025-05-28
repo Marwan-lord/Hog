@@ -2,9 +2,7 @@
 {
 
   services = {
-    blueman.enable = true;
     gnome.gnome-keyring.enable = true;
-    logind.powerKey = "ignore";
   };
 
   systemd = {

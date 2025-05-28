@@ -49,12 +49,11 @@
     php84Packages.composer
     sqlite
     superhtml
-    qutebrowser
     wineWowPackages.waylandFull
     kdePackages.kate
     ddgr
     lshw
-    gparted
+    nh
 
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
