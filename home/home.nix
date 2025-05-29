@@ -7,14 +7,15 @@
     ./sh.nix
     ./helix.nix
     ./alacritty.nix
-    ./hyprlock.nix
-    ./mako.nix
     ./foot.nix
     ./fuzzel.nix
-    ./zellij.nix
+    ./tools/zellij.nix
     ./zathura.nix
-    ./bat.nix
-    ./fzf.nix
+
+    ./tools/bat.nix
+    ./tools/mako.nix
+    ./tools/hyprlock.nix
+    ./tools/fzf.nix
   ];
 
   home.username = "marwan";

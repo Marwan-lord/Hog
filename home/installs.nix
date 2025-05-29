@@ -53,6 +53,8 @@
     kdePackages.kate
     ddgr
     lshw
+    cargo
+    rustc
     nh
 
     # Managing Scripts for now
