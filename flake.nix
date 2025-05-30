@@ -8,7 +8,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     stylix.url = "github:danth/stylix";
-    way-edges.url = "github:way-edges/way-edges/master";
   };
 
   outputs =

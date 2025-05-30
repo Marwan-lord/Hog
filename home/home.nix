@@ -16,6 +16,7 @@
     ./tools/mako.nix
     ./tools/hyprlock.nix
     ./tools/fzf.nix
+
   ];
 
   home.username = "marwan";
