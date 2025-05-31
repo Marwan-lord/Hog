@@ -110,7 +110,7 @@
     jq
     ripgrep
     fd
-    vlc
+
     pipewire
     pwvucontrol
     pw-volume

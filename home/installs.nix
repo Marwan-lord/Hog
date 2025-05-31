@@ -6,7 +6,10 @@
     yt-dlp
     libnotify
     ffmpeg
-    mpv
+
+    celluloid
+    xine-ui
+
     qalculate-gtk
     lua
     nodejs
