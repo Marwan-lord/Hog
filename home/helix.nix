@@ -20,14 +20,22 @@
     };
   };
   programs.helix.languages = {
-             language = [
-            {
-              name = "nix";
-              formatter = {
-                command = "nixfmt";
-              };
-              auto-format = true;
-            }
-          ];
+    language = [
+      {
+        name = "nix";
+        formatter = {
+          command = "nixfmt";
+        };
+        auto-format = true;
+      }
+
+      {
+        name = "rust";
+        formatter = {
+          command = "rustfmt";
+        };
+        auto-format = true;
+      }
+    ];
   };
 }

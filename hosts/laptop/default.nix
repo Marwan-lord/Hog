@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -78,6 +78,7 @@
       wezterm
       vesktop
       intelephense
+      discord-ptb
     ];
   };
 

@@ -58,7 +58,11 @@
     lshw
     cargo
     rustc
+    rustfmt
+    clippy
     nh
+    tgpt
+    swaybg
 
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
