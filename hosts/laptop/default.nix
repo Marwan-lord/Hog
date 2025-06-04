@@ -76,7 +76,6 @@
       clang
       gopls
       wezterm
-      vesktop
       intelephense
       discord-ptb
     ];
