@@ -2,7 +2,7 @@
 {
 
   stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/uwunicorn.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-khold.yaml";
   stylix.image = ../wallpapers/setup.jpg;
   stylix.polarity = "dark";
 
