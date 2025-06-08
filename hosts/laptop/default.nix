@@ -73,7 +73,6 @@
       htop
       man-pages
       man-pages-posix
-      clang
       gopls
       wezterm
       intelephense
@@ -122,6 +121,9 @@
     kitty
     foot
     lutris
+    glibc
+    libdrm
+    clang-tools
   ];
 
   environment.sessionVariables = {

@@ -60,9 +60,11 @@
     rustc
     rustfmt
     clippy
-    nh
     tgpt
     swaybg
+    wiki-tui
+    rusty-man
+    blanket
 
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
