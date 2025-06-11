@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -124,6 +124,7 @@
     glibc
     libdrm
     clang-tools
+    inputs.quickshell.packages.${pkgs.system}.default
   ];
 
   environment.sessionVariables = {
