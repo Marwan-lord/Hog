@@ -2,8 +2,8 @@
 {
 
   stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-khold.yaml";
-  stylix.image = ../wallpapers/setup.jpg;
+  # stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-khold.yaml";
+  stylix.image = ../wallpapers/backtonature.jpg;
   stylix.polarity = "dark";
 
   stylix.fonts = {

@@ -34,7 +34,6 @@
     waybar
     ttyper
     mgba
-    nautilus
     qview
     smassh
     gtypist
@@ -65,6 +64,7 @@
     wiki-tui
     rusty-man
     blanket
+    spaceFM
 
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
