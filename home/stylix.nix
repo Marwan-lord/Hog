@@ -2,7 +2,7 @@
 {
 
   stylix.enable = true;
-  # stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-khold.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gotham.yaml";
   stylix.image = ../wallpapers/backtonature.jpg;
   stylix.polarity = "dark";
 
@@ -19,8 +19,8 @@
     };
 
     sansSerif = {
-      package = pkgs.dejavu_fonts;
-      name = "DejaVu Sans";
+      package = pkgs.ubuntu-sans;
+      name = "Ubuntu Sans";
     };
   };
 }

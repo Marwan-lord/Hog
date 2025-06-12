@@ -20,7 +20,6 @@
       nixpkgs,
       home-manager,
       stylix,
-      quickshell,
       ...
     }@inputs:
     let

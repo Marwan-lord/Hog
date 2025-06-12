@@ -64,6 +64,7 @@
     wiki-tui
     rusty-man
     blanket
+    eww
     spaceFM
 
     # Managing Scripts for now
