@@ -66,6 +66,8 @@
     blanket
     eww
     spaceFM
+    floorp
+    nh
 
     # Managing Scripts for now
     (writeShellScriptBin "pf" (builtins.readFile ../scripts/finder.sh))
