@@ -6,10 +6,8 @@
     yt-dlp
     libnotify
     ffmpeg
-
     celluloid
     xine-ui
-
     qalculate-gtk
     lua
     nodejs
@@ -30,20 +28,14 @@
     dmenu-wayland
     foot
     nwg-look
-    ppsspp
     waybar
     ttyper
-    mgba
     qview
     smassh
     gtypist
     nitch
-    srb2
     krita
-    blastem
     anki
-    dolphin-emu
-    flycast
     p7zip
     zoxide
     hyprpicker
@@ -61,12 +53,10 @@
     clippy
     tgpt
     swaybg
-    wiki-tui
     rusty-man
     blanket
     eww
     spaceFM
-    floorp
     nh
 
     # Managing Scripts for now

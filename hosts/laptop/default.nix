@@ -92,16 +92,6 @@
     wget
     git
     alacritty
-    (chromium.override {
-      commandLineArgs = [
-        "--enable-features=AcceleratedVideoEncoder,VaapiOnNvidiaGPUs,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE"
-        "--enable-features=VaapiIgnoreDriverChecks,VaapiVideoDecoder,PlatformHEVCDecoderSupport"
-        "--enable-features=UseMultiPlaneFormatForHardwareVideo"
-        "--ignore-gpu-blocklist"
-        "--enable-zero-copy"
-      ];
-    })
-
     yazi
     pcmanfm
     neovim
@@ -111,20 +101,18 @@
     fd
 
     pipewire
-    pwvucontrol
     pw-volume
     pavucontrol
     home-manager
     brightnessctl
     nasm
     pkg-config
-    kitty
     foot
-    lutris
     glibc
     libdrm
     clang-tools
     inputs.quickshell.packages.${pkgs.system}.default
+    floorp
   ];
 
   environment.sessionVariables = {
